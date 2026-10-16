@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090b16" />
+    <title>Colour Drift</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .full {
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(10px);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+  <body>
+    <canvas id="background" aria-hidden="true"></canvas>
+    <div class="full"></div>
+  </body>
+  <script src="index.js"></script>
+</html>
